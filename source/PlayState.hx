@@ -49,7 +49,6 @@ class PlayState extends FlxState
 			error.y = FlxG.random.float(0,FlxG.height - error.height);
 			errosGroup.add(error);
 			quantities ++;
-			trace(quantities);
 		},0);
 
 		quantitiesWindow = new FlxText(0,0,FlxG.width,"Max of windows: coiso/0",20);
@@ -67,7 +66,6 @@ class PlayState extends FlxState
 			{
 				errosGroup.remove(turip,true);
 				quantities --;
-				trace(quantities);
 				quantitiesWindow.scale.set(0.8,0.6);
 				FlxTween.cancelTweensOf(quantitiesWindow);
 				FlxTween.tween(quantitiesWindow,{"scale.x":1,"scale.y":1},1,{type: ONESHOT, ease: FlxEase.smoothStepOut});
