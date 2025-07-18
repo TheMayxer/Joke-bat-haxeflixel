@@ -78,7 +78,7 @@ class PlayState extends FlxState
 		{
 			spawnError.cancel();
 			FlxTween.tween(FlxG.camera,{zoom:1.5},0.4,{type: ONESHOT, ease: FlxEase.smootherStepOut});
-			FlxG.camera.fade(FlxColor.BLACK,0.7,false,function () {FlxG.switchState(Crached.new);},false);
+			FlxG.camera.fade(FlxColor.BLACK,0.7,false,function () {FlxG.switchState(Freeze.new);},false);
 		}
 	}
 }
