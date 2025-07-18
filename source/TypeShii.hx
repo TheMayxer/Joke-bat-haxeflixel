@@ -7,7 +7,6 @@ import flixel.tweens.FlxTween;
 
 class TypeShii extends FlxSprite
 {
-    var randomNums = FlxG.random.int(0,3);
     public function new(x:Float, y:Float) {
         super(x,y);
         loadGraphic('images/errors/${FlxG.random.int(0,3)}.png');
